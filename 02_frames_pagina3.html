@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Mi primera página WEB: Frames (página 3)</title>
+    </head>
+
+	<body  <body style="background-color:#D698DA;">
+		<p>Presupuestos</p>
+		<a href="https://drive.google.com/file/d/1K7QRpC_8Hlw_6h-nCREk0oCtfVJ3MX_a/view?usp=sharing" target="_blank">Preuspuesto de Hardware</a><br><br>
+		<a href="https://drive.google.com/file/d/1o9zRcRqWluQTqXG17EehzzeTKdu0xlwl/view?usp=sharing" target="_blank">Preuspuesto de Software</a><br><br>
+		
+		<p>Planos</p>
+		<a href="https://drive.google.com/file/d/14NhS_lXHopXpTA01XWFwNgEfmrCsbYa5/view?usp=sharing" target="_blank">Plano en 2D</a><br><br>
+		<a href="https://drive.google.com/file/d/1pgV5CExQFpsMhz0RFYq9GAGbn7UrShz2/view?usp=sharing" target="_blank">Plano en 3D </a><br><br>
+		<a href="https://drive.google.com/file/d/1IojhZC-2n_dHlQzgVpYfkImISixCv5RK/view?usp=sharing" target="_blank">Plano en 3D_Frontal </a><br><br>
+
+
+<p>punto 7 PopUp</p><br>
+<!-- Simple pop-up -->
+<dialog id="favDialog">
+  <form method="dialog">
+    <section>
+      <p><label for="favAnimal">PopUp</label> <br> <br> 
+	<a href="https://drive.google.com/file/d/1lbjTWDg4u2uRG8Zne_Ym-cB7RzYW-wRh/view?usp=sharing" target="_blank">Video Planos</a><br><br>
+      
+    </section>
+    <menu>
+      <button id="cancel" type="reset">Cancel</button>
+      <button type="submit">Confirm</button>
+    </menu>
+  </form>
+</dialog>
+
+<menu>
+  <button id="updateDetails">Click PopUp</button>
+</menu>
+
+<script>
+  (function() {
+    var updateButton = document.getElementById('updateDetails');
+    var cancelButton = document.getElementById('cancel');
+    var favDialog = document.getElementById('favDialog');
+
+	
+
+    // Update button opens a modal dialog
+    updateButton.addEventListener('click', function() {
+      favDialog.showModal();
+
+
+    });
+
+    // Form cancel button closes the dialog box
+    cancelButton.addEventListener('click', function() {
+      favDialog.close();
+    });
+
+  })();
+</script>
+
+	</body>
+</html>
